@@ -13,7 +13,7 @@ public class FixedCapacityStackOfStrings implements Iterable<String> {
     }
 
     public boolean isEmpty() { return N == 0; }
-    public boolean ifFull() { return N == a.length; }
+    public boolean isFull() { return N == a.length; }
     public void push(String item) { a[N++] = item; }
     public String pop() { return a[--N]; }
     public String peek() { return a[N-1]; }
