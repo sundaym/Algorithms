@@ -4,6 +4,10 @@ public class Selection {
     // This class should be instantiated
     private Selection() {}
 
+    /**
+     * Rearranges the array in ascending order, using the natural order.
+     * @param a the array to be sorted
+     */
     public static void sort(Comparable[] a) {
         int n = a.length;
         for (int i = 0; i < n; i++) {
@@ -18,6 +22,11 @@ public class Selection {
         }
     }
 
+    /**
+     * Rearranges the array in ascending order, using a comparator
+     * @param a
+     * @param comparator
+     */
     public static void sort(Object[] a, Comparator comparator) {
         int n = a.length;
 
