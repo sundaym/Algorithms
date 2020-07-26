@@ -85,7 +85,7 @@ public class Selection {
     }
 
     public static void main(String[] args) {
-        String[] a = null;
+        String[] a = new String[] {"1", "2", "3", "4"};
         Selection.sort(a);
         show(a);
     }
