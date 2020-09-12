@@ -97,7 +97,7 @@ class CircleArrayQueue {
         // 2.将front后移
         // 3.返回保存的临时变量
         int tmp = front;
-        front++;
+        front = (front + 1) % maxSize;
         return arr[tmp];
     }
 
