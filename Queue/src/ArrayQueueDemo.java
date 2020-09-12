@@ -54,11 +54,11 @@ public class ArrayQueueDemo {
     }
 }
 
-// 使用数组模拟队列
+
 class ArrayQueue {
     private int maxSize; // 数组最大容量
-    private int front; // 指向队列头
-    private int rear; // 指向队列尾部
+    private int front; // 数组的下标，表示队列头
+    private int rear; // 数组的下标，表示队列尾部
     private int[] arr; // 数组用于存放队列数据
 
     // 创建队列的构造器
@@ -104,6 +104,7 @@ class ArrayQueue {
     public void showQueue() {
         if (isEmpty()) {
             System.out.println("队列为空，没有数据");
+            return;
         }
         for (int i = 0; i < arr.length; i++) {
             System.out.printf("arr[%d]=%d\n", i, arr[i]);
